@@ -1,0 +1,111 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e3e3e3;
+    color: #ffffff;
+}
+
+header{
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0.624em;
+    transition: background-color 0.8s ease, color 0.3s ease;
+
+}
+
+ul li a:hover {
+    background-color: black; /* Cambia el fondo al pasar el cursor por encima */
+    color: white; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: black 1px solid;
+    padding: 20px;
+    margin: 20px;
+    background: #000000; 
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+
+.circular-image {
+    max-width: 150px; /* Ajusta el tamaño según lo necesites */
+    max-height: 150px;
+    border-radius: 5px; /* Esto hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+
+/* From Uiverse.io by CristianMontoya98 */ 
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: white;
+   }
+   
+   button:after {
+    content: "";
+    background: black;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
